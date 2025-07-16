@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+}
+
+.section1 {
+  background-image: url('images/photo1.jpg');
+}
+
+.section2 {
+  background-image: url('images/photo2.jpg');
+}
+
+.section3 {
+  background-image: url('images/photo3.jpg');
+}
+
+.click-button {
+  padding: 20px 40px;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.click-button:hover {
+  background: rgba(255, 255, 255, 1);
+}
